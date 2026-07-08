@@ -1,0 +1,14 @@
+[Unit]
+Description=RAM Sentinel - low free-RAM monitor
+After=graphical-session.target
+
+[Service]
+Type=simple
+# Adjust flags as needed. -n disables desktop notifications (use it on
+# headless/SSH boxes; leave it off on a desktop session to get notify-send popups).
+ExecStart=%h/.local/bin/ram-sentinel.sh -t 500 -i 15 -c 300
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
