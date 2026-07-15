@@ -9,6 +9,7 @@ Configurable threshold, poll interval, and alert cooldown (no more
 spam-notifications every 15s while RAM stays low)
 Logs to both a logfile and syslog (`logger`), so output survives even
 when backgrounded
+
 Captures top 5 processes by `%MEM` on every alert
 `-n` log-only mode for headless/SSH sessions where `notify-send` has
 no display to talk to
