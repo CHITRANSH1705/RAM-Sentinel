@@ -17,6 +17,7 @@ no display to talk to
 PID-file guarded - refuses to start a second instance
 Graceful shutdown on SIGINT/SIGTERM (cleans up its own pidfile)
 `shellcheck`-clean
+
 systemd user service for real daemonization (auto-restart, survives
 logout/reboot) instead of `nohup ... &`
 Install (systemd, recommended)
